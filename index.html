@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <title>Ejercicio Completo con el DOM, EVENTOS, FUNCIONES</title>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sweetalert2@7.26.28/dist/sweetalert2.all.min.js">
+     </script>
+     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+       crossorigin="anonymous"></script>
+
+<style>
+.box{
+width: 250px;
+margin: 20px;
+height: 250px;
+text-align: center;
+}
+.dashed{
+border:  3px dashed #000;
+
+}
+
+
+#apellidos, #nombre, #edad{
+     width: 300px;
+     height: 35px;
+     margin: 15px;
+     text-align: center;
+     outline: none;
+     background: #eaeaea;
+     /* opacity: 0.5;   */
+     border: none;   
+}
+
+form{
+     /* margin-left: 10px; */
+     text-align: center;
+     margin-top: 100px;
+     background: rgba(0, 0, 0, 0.5);
+     padding: 10px;
+}
+
+label{
+     font-weight: bold;
+     font-size: 1.2rem;
+}
+
+#enviar_datos{
+     height: 45px;
+     width: 105px;
+     font-size: 1.3rem;
+     font-weight: bold;
+     border-radius:50px; 
+     color: #000;
+     background: #ccc;
+     border: none;
+          
+}
+
+#enviar_datos:hover{
+     transition: all 0.5s;
+     background: rgba(0, 0, 0, 0.8);
+     color:#fff;
+
+}
+
+
+
+</style>
+
+
+</head>
+<body>
+     <h1>Ejercicio Completo con el DOM, EVENTOS, FUNCIONES</h1>
+
+
+<form action="#" method="POST" id="formulario" onsubmit="return false">
+
+<label for="">Nombre</label>
+<br>
+<input type="text" name="nombre" id="nombre" placeholder="Introduce tu Nombre">
+<br>
+<br>
+
+<label for="">Apellido</label>
+<br>
+<input type="text" name="apellido"  id="apellidos" placeholder="Introduce tu Apellido">
+<br>
+<br>
+
+
+<label for="">Edad</label>
+<br>
+<input type="text" name="edad" id="edad"  placeholder="Introduce tu Edad">
+<br>
+<br>
+
+<input type="submit" value="Enviar" id="enviar_datos">
+
+</form>
+
+
+<div class="box dashed">
+<h3>Información del usuario</h3>
+<hr>
+</div>
+     <script src="app.js"></script>
+</body>
+</html>                    
