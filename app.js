@@ -44,86 +44,94 @@ function datosUsuarios() {
 
          //VALIDACION CON LAS CAJAS DE TEXTO(INPUT) 
 
-           if (nombre.trim() == null || nombre.trim().length == 0) {//verifica si hay espacios o si el campo esta vacio
-              
+         
+         if (nombre.trim() == null || nombre.trim().length == 0 || nombre.match(/\d/)) {//verifica si hay espacios o si el campo esta vacio
+          
 
 
-               //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
+          //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
                     swal({
                       type: 'error',
                       title: 'Oops...',
                       text: 'El nombre no es valido!',
                       footer: '<a href>Por qué tengo este problema?</a>'
                     })
-           
                     
-                   
-           
-
-                document.querySelector('#nombre').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color  
-                
-                
-                return false;
-               }
-     
-           if (apellido.trim() == null || apellido.trim().length == 0) {//verifica si hay espacios o si el campo esta vacio
-
-
-               //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
-               swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'El Apellido no es valido!',
-                    footer: '<a href>Por qué tengo este problema?</a>'
-                  })
-         
+                    
+                    
+                    
+                    
+                    document.querySelector('#nombre').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color  
+                    
+                    
+                    return false;
+                  }
                   
-              
-
-               
-               document.querySelector('#apellido').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color
-
-              
-              return false;
-          }
-          if (isNaN(edad)|| edad <= 0 || edad == null || edad >= 100) {//Verifica si lo que se introdujo no es un numero o si es menor a 0 o mayor o igual a 100
-
-
-
-            //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
- 
-               swal({
-                    type: 'error',
-                    title: 'Oops...',
-                    text: 'El numero no es valido!',
-                    footer: '<a href>Por qué tengo este problema?</a>'
-                  })
-         
+                  if (apellido.trim() == null || apellido.trim().length == 0 || apellido.match(/\d/)) {//verifica si hay espacios o si el campo esta vacio
+                    
+                    
+                    //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
+                    swal({
+                      type: 'error',
+                      title: 'Oops...',
+                      text: 'El Apellido no es valido!',
+                      footer: '<a href>Por qué tengo este problema?</a>'
+                    })
+                    
+                    
+                    
+                    
+                    
+                    document.querySelector('#apellidos').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color
+                    
+                    
+                    return false;
+                  }
+                  if (isNaN(edad)|| edad <= 0 || edad == null || edad >= 100) {//Verifica si lo que se introdujo no es un numero o si es menor a 0 o mayor o igual a 100
+                    
+                    
+                    
+                    //Alerta de error para verificar que faltan campos  que faltan campos(Libreria Sweet Alert2) 
+                    
+                    swal({
+                      type: 'error',
+                      title: 'Oops...',
+                      text: 'La Edad no es valida',
+                      footer: '<a href>Por qué tengo este problema?</a>'
+                    })
+                    
+                    
+                    
+                    
+                    
+                    
+                    document.querySelector('#edad').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color
+                    
+                    
+                    return false;
+                  }
                   
-               
-
-
-               
-               document.querySelector('#edad').style.background = 'red';//si se cumple cual quiera de las condiciones el campo cambia su color
-
-              
-              return false;
-          }
-
-          else{
-
-
-               $(document).ready(function () {
-                    // $('#nombre').click(function () {//Funcion que limpia todos los campos, una vez el evento submit es lanzado
+                  else{
+                    
+                    
+                    $(document).ready(function () {
+                      // $('#nombre').click(function () {//Funcion que limpia todos los campos, una vez el evento submit es lanzado
                       $('input[type="text"]').val('');
-                    // });
-                  });
+                      
+                      // });
+                    });
+                    
+                    swal(
+                      'Buen trabajo!',
+                      'Introdujo todos los Datos!',//alerta que todos los cambios estan listos
+                      'success'
+                      ) 
+                    
 
-               swal(
-                    'Buen trabajo!',
-                    'Introdujo todos los Datos!',//alerta que todos los cambios estan listos
-                    'success'
-                  ) 
+            
+
+
+                 
           }
 
 
