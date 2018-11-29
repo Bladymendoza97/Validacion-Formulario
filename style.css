@@ -1,0 +1,103 @@
+#particles-js {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  background: linear-gradient(45deg, #e91e63, #262626);
+  position: absolute;
+}
+
+.box {
+  width: auto;
+  margin: 20px;
+  height: auto;
+  text-align: center;
+}
+.dashed {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px dashed #000;
+  color: #eaeaea;
+  opacity: 0.5;
+  position: absolute;
+  font-size: 2.1rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,1);
+
+}
+#titulo-info{
+  font-size: 2rem;
+  font-weight: bold;
+}
+#titulo {
+  text-align: center;
+  font-size: 3.5rem;
+  color: #eaeaea;
+  opacity: 0.5;
+}
+
+#apellidos,
+#nombre,
+#edad {
+  height: 36px;
+  margin-bottom: 15px;
+  text-align: center;
+  outline: none;
+  background: #eaeaea;
+  opacity: 0.5;
+  border: none;
+  color: #000;
+}
+
+form {
+  text-align: center;
+  /* margin-top: 100px; */
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,1);
+}
+
+/* .row{
+       display: flex;
+       justify-content: center;
+  } */
+label {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: #eaeaea;
+  opacity: 0.5;
+}
+
+#enviar_datos {
+  height: 45px;
+  width: 105px;
+  font-size: 1.5rem;
+  font-weight: 800;
+  border-radius: 50px;
+  color: #000;
+  background: #eaeaea;
+  opacity: 0.5;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+#enviar_datos:hover {
+  transition: all 0.5s;
+  background: rgba(0, 0, 0, 0.9);
+  color: #fff;
+}
+
+
+@media screen and (min-width: 994px) {
+  .row {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  #particles-js {
+    /* width: 130%; */
+    height: 135%;
+    
+  }
+}
