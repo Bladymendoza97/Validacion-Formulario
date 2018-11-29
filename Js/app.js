@@ -135,6 +135,8 @@ function datosUsuarios() {
                       timer: 3000
                     })
                     
+
+                    
                     document.querySelector('#nombre').style.background = '#eaeaea';
                     document.querySelector('#apellidos').style.background = '#eaeaea';
                     document.querySelector('#edad').style.background = '#eaeaea';
