@@ -113,6 +113,9 @@ function datosUsuarios() {
                   
                   else{
                     
+                    document.querySelector('#nombre').style.background = '#eaeaea';
+                    document.querySelector('#apellidos').style.background = '#eaeaea';
+                    document.querySelector('#edad').style.background = '#eaeaea';
                     
                     $(document).ready(function () {
                       // $('#nombre').click(function () {//Funcion que limpia todos los campos, una vez el evento submit es lanzado
@@ -137,9 +140,6 @@ function datosUsuarios() {
                     
 
                     
-                    document.querySelector('#nombre').style.background = '#eaeaea';
-                    document.querySelector('#apellidos').style.background = '#eaeaea';
-                    document.querySelector('#edad').style.background = '#eaeaea';
                   
             
 
@@ -147,9 +147,9 @@ function datosUsuarios() {
                  
           }
 
+          var datosTotales = [nombre, apellido, edad];//arreglo multidimensional, para encapsular 3 variales          
 
 
-         var datosTotales = [nombre, apellido, edad];//arreglo multidimensional, para encapsular 3 variales          
          
          box_dashed.style.display = 'block';//al darle click al boton submit esta caja se muestra con los datos que le introducimos
          
