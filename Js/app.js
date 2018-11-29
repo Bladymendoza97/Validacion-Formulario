@@ -117,7 +117,7 @@ function datosUsuarios() {
                     $(document).ready(function () {
                       // $('#nombre').click(function () {//Funcion que limpia todos los campos, una vez el evento submit es lanzado
                       $('input[type="text"]').val('');
-                      
+                        
                       // });
                     });
                     
@@ -135,7 +135,10 @@ function datosUsuarios() {
                       timer: 3000
                     })
                     
-
+                    document.querySelector('#nombre').style.background = '#eaeaea';
+                    document.querySelector('#apellidos').style.background = '#eaeaea';
+                    document.querySelector('#edad').style.background = '#eaeaea';
+                  
             
 
 
