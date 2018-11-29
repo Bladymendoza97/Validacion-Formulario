@@ -54,7 +54,7 @@ function datosUsuarios() {
                       type: 'error',
                       title: 'Oops...',
                       text: 'El nombre no es valido!',
-                      footer: '<a href>Por qué tengo este problema?</a>'
+                      footer: '<a href="https://www.youtube.com">Por qué tengo este problema?</a>'
                     })
                     
                     
@@ -75,7 +75,7 @@ function datosUsuarios() {
                       type: 'error',
                       title: 'Oops...',
                       text: 'El Apellido no es valido!',
-                      footer: '<a href>Por qué tengo este problema?</a>'
+                      footer: '<a href="https://www.youtube.com">Por qué tengo este problema?</a>'
                     })
                     
                     
@@ -97,7 +97,7 @@ function datosUsuarios() {
                       type: 'error',
                       title: 'Oops...',
                       text: 'La Edad no es valida',
-                      footer: '<a href>Por qué tengo este problema?</a>'
+                      footer: '<a href="https://www.youtube.com">Por qué tengo este problema?</a>'
                     })
                     
                     
@@ -121,11 +121,19 @@ function datosUsuarios() {
                       // });
                     });
                     
-                    swal(
-                      'Buen trabajo!',
-                      'Introdujo todos los Datos!',//alerta que todos los cambios estan listos
-                      'success'
-                      ) 
+                    // swal(
+                    //   'Buen trabajo!',
+                    //   'Introdujo todos los Datos!',//alerta que todos los cambios estan listos
+                    //   'success'
+                    //   ) 
+                    swal({
+                      position: 'center',
+                      type: 'success',
+                      title: 'Buen trabajo!',
+                      text: 'Introdujo todos los Datos!',
+                      showConfirmButton: false,
+                      timer: 3000
+                    })
                     
 
             
